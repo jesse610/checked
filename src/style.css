@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+
+header {
+    font-family: 'Memos';
+    background-color: #fca5a5;
+}
+
+header h1 {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    font-size: 4rem;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    font-family: 'Rubik';
+}
+
+main .sidebar {
+    padding-right: 4rem;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    background-color: #e7e5e4;
+}
+
+.timing > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+.project-header {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-header button {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border-style: none;
+    font-size: 1.2rem;
+    background-color: #fca5a5;
+}
+
+.project-header h2 {
+    margin: 0;
+}
+
+.project {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.active {
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+
+nav > ul {
+    list-style-type: none;
+}
+
+ul > li {
+    text-decoration: none;
+}
+
+.emptyProject {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.todo-container > div {
+    text-align: center;
+}
+
+.createNewTodoBtn {
+    text-align: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    font-size: 3rem;
+    border-style: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    height: 320px;
+}
+
+.todo-form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: #e7e5e4;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .5rem;
+}
+
+.input-container #description {
+    height: 5rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.todoItems {
+    padding: 0 2rem;
+}
+
+.todoItems li {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    padding: 1rem 0;
+    background-color: #fca5a5;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+.todoItems > li > button {
+    border-style: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.isCompletedCheckbox {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.completed li {
+    background-color: #fca5a598;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
+
+.completed > li > div {
+    color: rgba(0, 0, 0, 0.574);
+}
+
+.completed > li > button {
+    opacity: 0.5;
+}
+
+#project-input {
+    font-size: 1.2rem;
+    width: 50%;
+}
+
+li > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 15%;
+}
+
+@font-face {
+    font-family: 'Memos';
+    src: url('./fonts/Sticky\ Memos\ Demo.ttf') format('TrueType');
+}

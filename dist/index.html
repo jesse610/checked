@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script><script defer src="domLogic.bundle.js"></script></head>
+<body>
+    <div id="content">
+        <header>
+            <h1>CHECKED</h1>
+        </header>
+
+        <main>
+
+            <div class="sidebar">
+                <nav class="timing">
+                    <ul>
+                        <li><a id="today" href="#"> Today </a></li>
+                        <li><a id="week" href="#">Week</a></li>
+                        <li><a id="month" href="#">Month</a></li>
+                        <li><a id="great-than-month" href="#"> &gt Month</a></li>
+                    </ul>
+                </nav>
+
+                <div class="project-header">
+                    <h2>Projects</h2>
+                    <button id="add-project-btn">+</button>
+                </div>
+
+                <nav>
+                    <ul class="projects">
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="todo-container">
+                <!-- <div class="todo-header hidden">
+                    <span>
+                        <form id="completed-checkbox" action="#" method="post" onsubmit="return false">
+                            <input type="checkbox" name="" id="">
+                        </form>
+                    </span>
+                    <span>Priority</span>
+                    <span>Title</span>
+                    <span>Description</span>
+                    <span>Due date</span>
+                </div> -->
+                <ul class="todoItems not-completed">
+
+                </ul>
+
+                <ul class="todoItems completed">
+
+                </ul>
+
+                <div class="form hidden">
+                    <form class="todo-form" action="#" method="POST">
+
+                        <div class="input-container">
+                            <label for="priority">Priority</label>
+                            <input type="number" id="priority" min="1" max="3" required>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="title">Title</label>
+                            <input type="text" name="title" id="title" required>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="desciption">Description</label>
+                            <textarea type="text" name="desc" id="desciption" rows="6"
+                            cols="30">
+
+                            </textarea>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="duedate">Due date:</label>
+                            <input type="date" name="duedate" id="duedate" required>
+                        </div>
+
+                        <div class="form-btns-container">
+                            <button type="button" id="cancel-btn">Cancel</button>
+                            <button type="submit" id="submit-btn">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
